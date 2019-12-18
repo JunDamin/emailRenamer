@@ -30,10 +30,13 @@ def makeEmailName(path, emlData):
     else:
         emlData['dateStr'] = ""
     #발신자 괄호
-    emlData['From'] = "("+emlData['From']+")"
+    emlData['From'] = "("+re.sub("\s[^(\s)]+@.+", "", emlData['From'])+")"
     #파일명 변환
     filename = " _ ".join([emlData[item] for item in ['dateStr', 'From', 'Subject']])
     filename = prettify_filename(filename)
+    #파일명 길이제한
+    if len(filename) > 100:
+        filename = filename[:100]
     filename += ".eml"
     print(filename)
     fileAddr = os.path.join(path, filename) #경로 저장
@@ -47,7 +50,7 @@ def renameEmailFile(emlAddr):
     return fileAddr
 
 
-def renameEmlFiles(path):
+def renameEmlFiles(path, window):
     eml_list = [os.path.join(path, file) for file in os.listdir(path) if file[-3:] == "eml"]
     log_list = []
     for emlAddr in eml_list:
@@ -56,5 +59,6 @@ def renameEmlFiles(path):
         except:
             print("Error")
             continue
-    print("Process Completed"")
+        window.refresh() #화면 출력을 위한 갱신
+    print("Process Completed")
     return log_list
