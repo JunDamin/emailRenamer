@@ -8,7 +8,7 @@ layout = [[sg.Text("eml 파일경로를 선택해 주세요.")],
           [sg.Output(size=(80, 20))],
           [sg.Button(button_text="변환시작", key="OK"), sg.Button(button_text="종료", key='Cancel')]]
 
-window = sg.Window('emailRenamer v.0.2', icon="email.ico",layout=layout)
+window = sg.Window('emailRenamer v.0.2', icon="icon\\email.ico",layout=layout)
 
 openText = '''
 ======================================================================

@@ -12,6 +12,14 @@
    'C:\\Program Files (x86)\\Microsoft Visual '
    'Studio\\Shared\\Python37_86\\lib\\datetime.py',
    'PYMODULE'),
+  ('typing',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python37_86\\lib\\typing.py',
+   'PYMODULE'),
+  ('_py_abc',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python37_86\\lib\\_py_abc.py',
+   'PYMODULE'),
   ('tracemalloc',
    'C:\\Program Files (x86)\\Microsoft Visual '
    'Studio\\Shared\\Python37_86\\lib\\tracemalloc.py',
@@ -19,10 +27,6 @@
   ('stringprep',
    'C:\\Program Files (x86)\\Microsoft Visual '
    'Studio\\Shared\\Python37_86\\lib\\stringprep.py',
-   'PYMODULE'),
-  ('_py_abc',
-   'C:\\Program Files (x86)\\Microsoft Visual '
-   'Studio\\Shared\\Python37_86\\lib\\_py_abc.py',
    'PYMODULE'),
   ('__future__',
    'C:\\Program Files (x86)\\Microsoft Visual '
@@ -39,6 +43,10 @@
   ('inspect',
    'C:\\Program Files (x86)\\Microsoft Visual '
    'Studio\\Shared\\Python37_86\\lib\\inspect.py',
+   'PYMODULE'),
+  ('os',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python37_86\\lib\\os.py',
    'PYMODULE'),
   ('cmd',
    'C:\\Program Files (x86)\\Microsoft Visual '
@@ -180,6 +188,14 @@
    'C:\\Program Files (x86)\\Microsoft Visual '
    'Studio\\Shared\\Python37_86\\lib\\platform.py',
    'PYMODULE'),
+  ('token',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python37_86\\lib\\token.py',
+   'PYMODULE'),
+  ('tokenize',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python37_86\\lib\\tokenize.py',
+   'PYMODULE'),
   ('urllib.parse',
    'C:\\Program Files (x86)\\Microsoft Visual '
    'Studio\\Shared\\Python37_86\\lib\\urllib\\parse.py',
@@ -187,6 +203,10 @@
   ('tempfile',
    'C:\\Program Files (x86)\\Microsoft Visual '
    'Studio\\Shared\\Python37_86\\lib\\tempfile.py',
+   'PYMODULE'),
+  ('subprocess',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python37_86\\lib\\subprocess.py',
    'PYMODULE'),
   ('tty',
    'C:\\Program Files (x86)\\Microsoft Visual '
@@ -380,6 +400,10 @@
    'C:\\Program Files (x86)\\Microsoft Visual '
    'Studio\\Shared\\Python37_86\\lib\\shutil.py',
    'PYMODULE'),
+  ('selectors',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python37_86\\lib\\selectors.py',
+   'PYMODULE'),
   ('socket',
    'C:\\Program Files (x86)\\Microsoft Visual '
    'Studio\\Shared\\Python37_86\\lib\\socket.py',
@@ -412,6 +436,14 @@
    'C:\\Program Files (x86)\\Microsoft Visual '
    'Studio\\Shared\\Python37_86\\lib\\string.py',
    'PYMODULE'),
+  ('_threading_local',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python37_86\\lib\\_threading_local.py',
+   'PYMODULE'),
+  ('threading',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python37_86\\lib\\threading.py',
+   'PYMODULE'),
   ('_compat_pickle',
    'C:\\Program Files (x86)\\Microsoft Visual '
    'Studio\\Shared\\Python37_86\\lib\\_compat_pickle.py',
@@ -428,6 +460,10 @@
    'C:\\Program Files (x86)\\Microsoft Visual '
    'Studio\\Shared\\Python37_86\\lib\\pprint.py',
    'PYMODULE'),
+  ('contextlib',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python37_86\\lib\\contextlib.py',
+   'PYMODULE'),
   ('unittest.case',
    'C:\\Program Files (x86)\\Microsoft Visual '
    'Studio\\Shared\\Python37_86\\lib\\unittest\\case.py',
@@ -435,6 +471,18 @@
   ('unittest.suite',
    'C:\\Program Files (x86)\\Microsoft Visual '
    'Studio\\Shared\\Python37_86\\lib\\unittest\\suite.py',
+   'PYMODULE'),
+  ('stat',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python37_86\\lib\\stat.py',
+   'PYMODULE'),
+  ('genericpath',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python37_86\\lib\\genericpath.py',
+   'PYMODULE'),
+  ('posixpath',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python37_86\\lib\\posixpath.py',
    'PYMODULE'),
   ('fnmatch',
    'C:\\Program Files (x86)\\Microsoft Visual '
@@ -452,6 +500,10 @@
    'C:\\Program Files (x86)\\Microsoft Visual '
    'Studio\\Shared\\Python37_86\\lib\\unittest\\main.py',
    'PYMODULE'),
+  ('signal',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python37_86\\lib\\signal.py',
+   'PYMODULE'),
   ('unittest.signals',
    'C:\\Program Files (x86)\\Microsoft Visual '
    'Studio\\Shared\\Python37_86\\lib\\unittest\\signals.py',
@@ -459,14 +511,6 @@
   ('unittest',
    'C:\\Program Files (x86)\\Microsoft Visual '
    'Studio\\Shared\\Python37_86\\lib\\unittest\\__init__.py',
-   'PYMODULE'),
-  ('doctest',
-   'C:\\Program Files (x86)\\Microsoft Visual '
-   'Studio\\Shared\\Python37_86\\lib\\doctest.py',
-   'PYMODULE'),
-  ('token',
-   'C:\\Program Files (x86)\\Microsoft Visual '
-   'Studio\\Shared\\Python37_86\\lib\\token.py',
    'PYMODULE'),
   ('struct',
    'C:\\Program Files (x86)\\Microsoft Visual '
@@ -488,53 +532,9 @@
    'C:\\Program Files (x86)\\Microsoft Visual '
    'Studio\\Shared\\Python37_86\\lib\\argparse.py',
    'PYMODULE'),
-  ('tokenize',
+  ('doctest',
    'C:\\Program Files (x86)\\Microsoft Visual '
-   'Studio\\Shared\\Python37_86\\lib\\tokenize.py',
-   'PYMODULE'),
-  ('typing',
-   'C:\\Program Files (x86)\\Microsoft Visual '
-   'Studio\\Shared\\Python37_86\\lib\\typing.py',
-   'PYMODULE'),
-  ('stat',
-   'C:\\Program Files (x86)\\Microsoft Visual '
-   'Studio\\Shared\\Python37_86\\lib\\stat.py',
-   'PYMODULE'),
-  ('genericpath',
-   'C:\\Program Files (x86)\\Microsoft Visual '
-   'Studio\\Shared\\Python37_86\\lib\\genericpath.py',
-   'PYMODULE'),
-  ('posixpath',
-   'C:\\Program Files (x86)\\Microsoft Visual '
-   'Studio\\Shared\\Python37_86\\lib\\posixpath.py',
-   'PYMODULE'),
-  ('signal',
-   'C:\\Program Files (x86)\\Microsoft Visual '
-   'Studio\\Shared\\Python37_86\\lib\\signal.py',
-   'PYMODULE'),
-  ('contextlib',
-   'C:\\Program Files (x86)\\Microsoft Visual '
-   'Studio\\Shared\\Python37_86\\lib\\contextlib.py',
-   'PYMODULE'),
-  ('_threading_local',
-   'C:\\Program Files (x86)\\Microsoft Visual '
-   'Studio\\Shared\\Python37_86\\lib\\_threading_local.py',
-   'PYMODULE'),
-  ('threading',
-   'C:\\Program Files (x86)\\Microsoft Visual '
-   'Studio\\Shared\\Python37_86\\lib\\threading.py',
-   'PYMODULE'),
-  ('selectors',
-   'C:\\Program Files (x86)\\Microsoft Visual '
-   'Studio\\Shared\\Python37_86\\lib\\selectors.py',
-   'PYMODULE'),
-  ('subprocess',
-   'C:\\Program Files (x86)\\Microsoft Visual '
-   'Studio\\Shared\\Python37_86\\lib\\subprocess.py',
-   'PYMODULE'),
-  ('os',
-   'C:\\Program Files (x86)\\Microsoft Visual '
-   'Studio\\Shared\\Python37_86\\lib\\os.py',
+   'Studio\\Shared\\Python37_86\\lib\\doctest.py',
    'PYMODULE'),
   ('emailRenamer',
    'C:\\Users\\user\\Documents\\Python Scripts\\emailRenamer\\emailRenamer.py',
