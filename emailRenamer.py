@@ -5,15 +5,16 @@ from datetime import datetime
 from email import policy
 from email.parser import BytesParser
 
+
 def prettify_filename(filename):
     return re.sub(r'[\\\/:*?"<>|.]+', "", filename)
 
 
 def getEmailData(emlAddr):
-    item_list = ["date", "From", "To", "Subject"] #긁어낼 아이템
-    emlData = {} 
-    with open(emlAddr, 'rb') as fp:
-        msg = BytesParser(policy = policy.default).parse(fp)
+    item_list = ["date", "From", "To", "Subject"]  # 긁어낼 아이템
+    emlData = {}
+    with open(emlAddr, "rb") as fp:
+        msg = BytesParser(policy=policy.default).parse(fp)
         for item in item_list:
             if msg[item]:
                 emlData[item] = msg[item]
@@ -21,27 +22,33 @@ def getEmailData(emlAddr):
                 emlData[item] = ""
     return emlData
 
+
 def makeEmailName(path, emlData):
     eml_time_format = "%a, %d %b %Y %H:%M:%S %z"
     output_time_format = "(%Y%m%d_%H%M)"
-    #시간 포맷 변환
-    if emlData['date']:
-        emlData['dateStr'] = datetime.strptime(emlData['date'], eml_time_format).strftime(output_time_format) #시간 포맷 변환
+    # 시간 포맷 변환
+    if emlData["date"]:
+        emlData["dateStr"] = datetime.strptime(
+            emlData["date"], eml_time_format
+        ).strftime(
+            output_time_format
+        )  # 시간 포맷 변환
     else:
-        emlData['dateStr'] = ""
-    #발신자 괄호
-    emlData['From'] = "("+re.sub("\s[^(\s)]+@.+", "", emlData['From'])+")"
-    #파일명 변환
-    filename = " _ ".join([emlData[item] for item in ['dateStr', 'From', 'Subject']])
+        emlData["dateStr"] = ""
+    # 발신자 괄호
+    emlData["From"] = "(" + re.sub(" [^( )]+@.+", "", emlData["From"]) + ")"
+    # 파일명 변환
+    filename = " _ ".join([emlData[item] for item in ["dateStr", "From", "Subject"]])
     filename = prettify_filename(filename)
-    #파일명 길이제한
+    # 파일명 길이제한
     if len(filename) > 100:
         filename = filename[:100]
     filename += ".eml"
     print(filename)
-    fileAddr = os.path.join(path, filename) #경로 저장
+    fileAddr = os.path.join(path, filename)  # 경로 저장
     return fileAddr
-    
+
+
 def renameEmailFile(emlAddr):
     path = os.path.dirname(emlAddr)
     emlData = getEmailData(emlAddr)
@@ -51,7 +58,9 @@ def renameEmailFile(emlAddr):
 
 
 def renameEmlFiles(path, window):
-    eml_list = [os.path.join(path, file) for file in os.listdir(path) if file[-3:] == "eml"]
+    eml_list = [
+        os.path.join(path, file) for file in os.listdir(path) if file[-3:] == "eml"
+    ]
     log_list = []
     for emlAddr in eml_list:
         try:
@@ -59,6 +68,6 @@ def renameEmlFiles(path, window):
         except:
             print("Error")
             continue
-        window.refresh() #화면 출력을 위한 갱신
+        window.refresh()  # 화면 출력을 위한 갱신
     print("Process Completed")
     return log_list
